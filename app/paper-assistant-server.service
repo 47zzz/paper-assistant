@@ -1,0 +1,15 @@
+[Unit]
+Description=Paper Assistant backend (HTTP on 127.0.0.1:8765, reminder scheduler)
+After=default.target
+
+[Service]
+Type=simple
+WorkingDirectory=@ROOT@
+ExecStart="@PY@" "@ROOT@/app/server.py" --port 8765
+Restart=on-failure
+RestartSec=2
+Environment=PYTHONUNBUFFERED=1
+Environment=DBUS_SESSION_BUS_ADDRESS=unix:path=%t/bus
+
+[Install]
+WantedBy=default.target

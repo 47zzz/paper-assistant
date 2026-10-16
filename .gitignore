@@ -1,0 +1,25 @@
+# ---- Your library lives next to the code. None of it belongs in git. ----
+library.json
+library.lock
+*.tmp
+.backups/
+papers/
+notes/
+.reading/
+.reading-state.json
+.expert/
+.gaps/
+.trail/
+.radar-cache.json
+.scheduler-state.json
+*.log
+
+# ---- Local tooling ----
+__pycache__/
+*.pyc
+.claude/settings.local.json
+tests/libcopy/
+tests/chrome_cdp/
+tests/xdg/
+tests/*.png
+.DS_Store

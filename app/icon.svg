@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#6f7cff"/>
+      <stop offset="1" stop-color="#4b48c9"/>
+    </linearGradient>
+    <linearGradient id="page" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#e9ebf5"/>
+    </linearGradient>
+  </defs>
+  <rect x="16" y="16" width="224" height="224" rx="56" fill="url(#bg)"/>
+  <!-- open book -->
+  <path d="M52 176 V84 q38-14 76 0 V176 q-38-14-76 0z" fill="url(#page)"/>
+  <path d="M204 176 V84 q-38-14-76 0 V176 q38-14 76 0z" fill="url(#page)"/>
+  <path d="M128 84 V176" stroke="#c7cae0" stroke-width="4" stroke-linecap="round"/>
+  <path d="M68 104h44M68 122h44M68 140h32M144 104h44M144 122h44M144 140h32" stroke="#9aa0d6" stroke-width="5" stroke-linecap="round"/>
+  <!-- owl perched on the book -->
+  <g transform="translate(128 60)">
+    <ellipse cx="0" cy="14" rx="30" ry="28" fill="#2b2a55"/>
+    <circle cx="-11" cy="8" r="11" fill="#fff"/>
+    <circle cx="11" cy="8" r="11" fill="#fff"/>
+    <circle cx="-9" cy="9" r="5" fill="#1b1b3a"/>
+    <circle cx="13" cy="9" r="5" fill="#1b1b3a"/>
+    <circle cx="-7" cy="7" r="1.8" fill="#fff"/>
+    <circle cx="15" cy="7" r="1.8" fill="#fff"/>
+    <path d="M-5 20 L0 27 L5 20z" fill="#ffb347"/>
+    <path d="M-26 -6 L-18 2 M26 -6 L18 2" stroke="#2b2a55" stroke-width="7" stroke-linecap="round"/>
+  </g>
+  <!-- bookmark / streak flame -->
+  <path d="M190 40 q16 18 6 34 q-4-6-8-8 q2 10-6 16 q-10-10-4-24 q4-2 6-8 q4 2 6-10z" fill="#ffb347"/>
+</svg>

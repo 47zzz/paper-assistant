@@ -1,0 +1,29 @@
+[Desktop Entry]
+Type=Application
+Version=1.5
+Name=Paper Assistant
+Name[zh_TW]=論文書房
+GenericName=Research reading assistant
+Comment=Personal paper-reading assistant with planning, reminders, focus sessions and literature surveys
+Comment[zh_TW]=你的論文閱讀助理：排程、提醒、專注計時與 Yan 的文獻調查
+Exec="@PY@" "@ROOT@/app/desktop.py"
+TryExec=@PY@
+Path=@ROOT@
+Icon=@ID@
+Terminal=false
+Categories=Science;
+Keywords=papers;reading;arxiv;research;論文;閱讀;
+StartupNotify=true
+StartupWMClass=@ID@
+SingleMainWindow=true
+Actions=Browser;Safe;
+
+[Desktop Action Browser]
+Name=Open in browser
+Name[zh_TW]=在瀏覽器開啟
+Exec="@PY@" "@ROOT@/app/desktop.py" --browser
+
+[Desktop Action Safe]
+Name=Safe mode (if the window renders blank)
+Name[zh_TW]=安全模式（顯示異常時使用）
+Exec=env PAPER_ASSISTANT_WEBKIT_SAFE=1 "@PY@" "@ROOT@/app/desktop.py"
